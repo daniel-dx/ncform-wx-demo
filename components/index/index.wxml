@@ -1,0 +1,9 @@
+<!--components/index/index.wxml-->
+<template name="ncform-input">
+  <ncform-input config="{{config}}" value="{{value}}" bind:widgetValueChange="valueChange"></ncform-input>
+</template>
+<template name="ncform-radio">
+  <ncform-radio config="{{config}}" value="{{value}}" bind:widgetValueChange="valueChange"></ncform-radio>
+</template>
+
+<template is="{{componentName}}" data="{{config: componentConfig, value: value}}"/>

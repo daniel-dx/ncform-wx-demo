@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncform-input": "../ncform-input/index",
+    "ncform-radio": "../ncform-radio/index"
+  }
+}

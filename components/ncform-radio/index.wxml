@@ -1,0 +1,6 @@
+<!--components/ncform-radio/index.wxml-->
+<radio-group class="radio-group" bindchange="radioChange">
+  <radio class="radio" wx:for-items="{{items}}" wx:key="value" value="{{item.value}}" checked="{{item.checked}}">
+    <text>{{item.name}}</text>
+  </radio>
+</radio-group>
