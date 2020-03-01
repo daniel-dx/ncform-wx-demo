@@ -15,8 +15,8 @@ Component({
   lifetimes: {
     attached: function () {
       const newSchema = this._handleSchem(mockData);
-      this._calcExpressions(newSchema);
       this._extractValueFormSchema(newSchema);
+      this._calcExpressions(newSchema);
     },
   },
 
