@@ -17,7 +17,7 @@ module.exports = {
     },
     "age": {
       "type": "string",
-      "value": "20",
+      "value": "17",
       "ui": {
         "hidden": "dx: {{$root.show}} === false",
         "label": "Age",
@@ -28,7 +28,7 @@ module.exports = {
       "type": "string",
       "value": "hello daniel",
       "ui": {
-        "hidden": "dx: {{$root.age}} === '20'",
+        "hidden": "dx: parseInt({{$root.age}}) < 18",
         "label": "Name",
         "widget": "ncform-input"
       }

@@ -26,6 +26,12 @@ Component({
       const path = e.target.dataset.path;
       const value = e.detail;
       this.data.formValue[path] = value;
+      
+      // 修改值
+      const foundOne = this.data.formSchema.properties.find(item => item.field === path);
+      if (foundOne) {
+        foundOne.value = value;
+      }
 
       // 计算表达式
       this._calcExpressions(this.data.formSchema);
