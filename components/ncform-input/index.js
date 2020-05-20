@@ -6,7 +6,9 @@ Component({
   properties: {
     config: {
       type: Object,
-      value: {}
+      value: {
+        type: 'text', // number/password
+      }
     },
     value: {
       type: String

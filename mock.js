@@ -6,6 +6,7 @@ module.exports = {
       "value": true,
       "ui": {
         "label": "Show",
+        "desc": "bbbb",
         "widget": "ncform-radio",
         "widgetConfig": {
           items: [
@@ -21,7 +22,11 @@ module.exports = {
       "ui": {
         "hidden": "dx: {{$root.show}} === false",
         "label": "Age",
-        "widget": "ncform-input"
+        "desc": "aaaa",
+        "widget": "ncform-input",
+        "widgetConfig": {
+          "type": "password"
+        }
       }
     },
     "name": {

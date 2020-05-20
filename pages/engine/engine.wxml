@@ -7,8 +7,9 @@
       <view wx:for="{{formSchema.properties}}" wx:key="idx" hidden="{{item._uiHidden}}">
         <mp-cell title="{{item.ui.label}}" >
           <ncform-comp component-name="{{item.ui.widget}}" component-config="{{item.ui.widgetConfig}}" value="{{item.value}}" data-path="{{item.field}}" bind:widgetValueChange="valueChange"></ncform-comp>
+          <view>{{item.ui.desc}}</view>
         </mp-cell>
-        </view>
+      </view>
     </mp-cells>
   </mp-form>
   

@@ -1,2 +1,2 @@
 <!--components/ncform-input/index.wxml-->
-<input value="{{value}}" bindchange="onChange"></input>
+<input type="{{config.type}}" value="{{value}}" bindchange="onChange"></input>
